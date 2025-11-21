@@ -47,7 +47,7 @@ photosSnap.forEach(doc => {
 
 // IF NO PHOTOS → USE YOUR DEMO PHOTO
 if (photos.length === 0) {
-    photos.push("/mnt/data/synua_granada.jpg");
+    photos.push("photos/synua_granada.jpg"); 
 }
 
 // Build carousel slides
