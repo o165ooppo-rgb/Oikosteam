@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Installation — OIKOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-nav">
+    <img src="oikos.png" class="logo">
+    <nav class="menu">
+        <a href="index.html">Calendar</a>
+        <a href="add.html" class="active">Add Work</a>
+    </nav>
+</header>
+
+<div class="form-container">
+
+    <h2>Add New Installation</h2>
+
+    <label>Date:</label>
+    <input id="dateInput" type="date">
+
+    <label>Installer Name:</label>
+    <input id="installerInput" type="text" placeholder="Java">
+
+    <label>Address:</label>
+    <input id="addressInput" type="text" placeholder="Palm Jumeirah">
+
+    <label>Door Model:</label>
+    <input id="modelInput" type="text" placeholder="Oikos Synua">
+
+    <label>Door Type:</label>
+    <input id="typeInput" type="text" placeholder="Pivot 3m">
+
+    <label>Description:</label>
+    <textarea id="descriptionInput" rows="4"></textarea>
+
+    <label>Upload Video (MP4):</label>
+    <input id="videoFile" type="file" accept="video/mp4">
+
+    <label>Upload Photos (max 10):</label>
+    <input id="photoFiles" type="file" accept="image/*" multiple>
+
+    <button id="submitBtn">Upload Work</button>
+
+    <p id="status"></p>
+
+</div>
+
+<script type="module" src="add.js"></script>
+</body>
+</html>
