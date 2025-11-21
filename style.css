@@ -145,7 +145,6 @@ body {
     margin: 35px auto;
 }
 
-/* VIDEO WRAPPER */
 .video-wrapper {
     position: relative;
     width: 100%;
@@ -162,7 +161,6 @@ body {
     object-fit: cover;
 }
 
-/* FLOATING VIDEO CONTROLS */
 .video-controls {
     position: absolute;
     bottom: 18px;
@@ -212,7 +210,6 @@ body {
     background-position: center;
 }
 
-/* NAV BUTTONS */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -230,7 +227,7 @@ body {
 .next { right: 15px; }
 
 /* ================================
-   JOB INFORMATION BLOCK
+   JOB INFO BLOCK
 ================================== */
 .job-info {
     margin-top: 32px;
@@ -245,4 +242,86 @@ body {
 .job-info h2 {
     font-size: 30px;
     margin-bottom: 12px;
+}
+
+/* ================================
+   NEW TEAM GRID (TESLA STYLE)
+================================== */
+.team-grid {
+    width: 92%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.team-card {
+    position: relative;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.25);
+}
+
+.team-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 18px 22px;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.team-label h3 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.team-label p {
+    margin: 2px 0 0;
+    color: #eaeaea;
+    font-size: 14px;
+}
+
+@media(max-width: 1000px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .team-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.lang-switch {
+    display: inline-flex;
+    gap: 12px;
+    margin-left: 40px;
+}
+
+.lang-switch span {
+    cursor: pointer;
+    font-size: 15px;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.lang-switch span:hover {
+    opacity: 1;
+}
+
+.lang-switch .active-lang {
+    opacity: 1;
+    font-weight: 600;
 }

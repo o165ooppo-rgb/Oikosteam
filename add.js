@@ -67,3 +67,4 @@ submitBtn.onclick = async () => {
 
     status.innerText = "Uploaded successfully!";
 };
+
